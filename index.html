@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#082A32">
 <title>Kevin Korn – Financial Trainer bei ONESTY</title>
-<meta name="description" content="Kevin Korn, Financial Trainer bei ONESTY: Altersvorsorge, Versicherungen, Krankenversicherung, Strom und Baufinanzierung in Berlin und Brandenburg. Honorar statt Provision.">
+<meta name="description" content="Kevin Korn, Financial Trainer bei ONESTY: Altersvorsorge, Versicherungen, Krankenversicherung, Strom, Baufinanzierung und Privatkredite in Berlin und Brandenburg. Honorar statt Provision.">
 <link rel="canonical" href="https://kevinkorn.de/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23082A32'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23C2A060'%3EKK%3C/text%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Kevin Korn">
 <meta property="og:title" content="Kevin Korn – Financial Trainer bei ONESTY">
-<meta property="og:description" content="Kevin Korn, Financial Trainer bei ONESTY: Altersvorsorge, Versicherungen, Krankenversicherung, Strom und Baufinanzierung in Berlin und Brandenburg. Honorar statt Provision.">
+<meta property="og:description" content="Kevin Korn, Financial Trainer bei ONESTY: Altersvorsorge, Versicherungen, Krankenversicherung, Strom, Baufinanzierung und Privatkredite in Berlin und Brandenburg. Honorar statt Provision.">
 <meta property="og:url" content="https://kevinkorn.de/">
 <meta property="og:image" content="https://kevinkorn.de/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -306,7 +306,17 @@ input[type=range]::-moz-range-thumb{width:22px;height:22px;border:0;border-radiu
 #cur.big{width:56px;height:56px;margin:-28px 0 0 -28px;background:rgba(194,160,96,.25);border:1px solid var(--gold)}
 @media (hover:none){#cur{display:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}.rv{opacity:1;transform:none}.hero h1 .w{opacity:1;transform:none}}
-.slides video.herovid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:opacity 1.2s ease;pointer-events:none}.slides img:first-child:not(.on)~video.herovid{opacity:0}@media (prefers-reduced-motion:reduce){video.herovid{display:none}}</style>
+.slides video.herovid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:opacity 1.2s ease;pointer-events:none}.slides img:first-child:not(.on)~video.herovid{opacity:0}@media (prefers-reduced-motion:reduce){video.herovid{display:none}}.cards.c4{grid-template-columns:repeat(4,1fr);gap:20px}@media (max-width:1100px){.cards.c4{grid-template-columns:repeat(2,1fr)}}@media (max-width:640px){.cards.c4{grid-template-columns:1fr}}
+.sc-kredit{background:radial-gradient(circle at 30% 30%,#1E5562 0,#082A32 65%)}
+.pcard .img .tm{z-index:0;transform:scale(1.02);animation:kb 18s ease-in-out infinite alternate}
+.pcard .img video.tm{animation:none;opacity:0;transition:opacity .8s ease}.pcard .img video.tm.on{opacity:1}
+.pcard:hover .img .tm{transform:scale(1.07)}
+.pcard .img .shade,.pcard .img .fig{z-index:2}
+.pcard .img .fig{width:auto}
+.pcard .img .fig small{white-space:normal;line-height:1.4;max-width:100%;overflow-wrap:anywhere}.cards.c4 .pcard .img .fig{font-size:clamp(1.5rem,2.2vw,2rem);left:20px;right:20px;bottom:18px;inset:auto 20px 18px 20px}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.09)}}
+@media (prefers-reduced-motion:reduce){.pcard .img .tm{animation:none}.pcard .img video.tm{display:none}}
+</style>
 </head>
 <body>
 <div id="cur" aria-hidden="true"></div>
@@ -377,6 +387,10 @@ const LEIST={
   cards:[['Kauf','Finanzierung vor der Besichtigung','Mit einer gerechneten Finanzierung weißt du vor dem ersten Termin, welcher Preis zu dir passt.'],['Anschluss','Zinsbindung läuft aus','Bis zu fünf Jahre vor Ablauf lässt sich eine Anschlussfinanzierung absichern.'],['Förderung','Förderkredite einbinden','Förderprogramme können die Rate senken. Ich prüfe, was für dein Objekt infrage kommt.']],
   four:[['Eigenkapital','Je mehr Eigenkapital, desto günstiger in der Regel der Zins.'],['Tilgung','Die Tilgung entscheidet, wann du schuldenfrei bist.'],['Zinsbindung','Lange Bindung bringt Planungssicherheit, kurze oft einen niedrigeren Zins.'],['Haushalt','Banken prüfen, ob die Rate nach allen Ausgaben tragbar bleibt.']],
   steps:[['Unterlagen','Einkommen, Eigenkapital, Objekt.'],['Rahmen','Was kannst du dir leisten?'],['Vergleich','Angebote mehrerer Banken.'],['Zusage','Antrag und Bewertung des Objekts.'],['Notar','Kaufvertrag und Auszahlung.']],calc:'bau'},
+ privatkredit:{t:'Privatkredite',eye:'Privatkredite · Vergleich',h:'Den passenden Kredit finden, bevor du unterschreibst.',lead:'Ich vergleiche Ratenkredite und Umschuldungen mehrerer Banken für dich und begleite dich bis zum Antrag. Ich bin Vermittler, nicht Kreditgeber: Die Bank entscheidet über Zusage und Konditionen.',scene:'sc-kredit',
+  cards:[['Ratenkredit','Anschaffung oder Renovierung','Betrag, Laufzeit und Rate werden an dein Budget angepasst, nicht an das Angebot der erstbesten Bank.'],['Umschuldung','Teure Kredite ablösen','Laufende Ratenkredite oder Dispo lassen sich oft zusammenfassen. Ich rechne, ob sich das nach allen Kosten lohnt.'],['Absicherung','Restschuldversicherung prüfen','Sie ist freiwillig und oft teuer. Ich zeige dir, was sie kostet und ob es Alternativen gibt.']],
+  four:[['Effektivzins','Entscheidend ist der effektive Jahreszins, nicht der Sollzins.'],['Gesamtkosten','Ich zeige dir Rate, Laufzeit und Gesamtbetrag nebeneinander.'],['Sondertilgung','Kostenlose Sondertilgungen sparen Zinsen, wenn du später mehr zahlen kannst.'],['Haushalt','Die Rate muss nach allen Ausgaben tragbar bleiben. Ist sie es nicht, rate ich ab.']],
+  steps:[['Anliegen','Wofür brauchst du das Geld und wie viel?'],['Haushalt','Einnahmen, Ausgaben und laufende Kredite.'],['Vergleich','Angebote mehrerer Banken, in Euro nebeneinander.'],['Antrag','Die Bank prüft deine Bonität und entscheidet.'],['Auszahlung','Nach Zusage und Vertragsabschluss.']],calc:'kredit'},
  absicherung:{t:'Versicherungs-Check',eye:'Absicherung · Versicherungs-Check',h:'Alle Policen auf einen Tisch.',lead:'Du fotografierst, ich sortiere: behalten, anpassen, kündigen. Doppelte Verträge fallen weg, echte Lücken werden geschlossen.',scene:'sc-roof',
   cards:[['Haftung','Privathaftpflicht','Schützt dich, wenn du anderen einen Schaden zufügst. Eine der wichtigsten Versicherungen überhaupt.'],['Einkommen','Berufsunfähigkeit','Sichert dein Einkommen, wenn du deinen Beruf gesundheitlich nicht mehr ausüben kannst.'],['Besitz','Hausrat und Wohngebäude','Schützen Einrichtung und Gebäude bei Feuer, Wasser, Sturm und Einbruch.']],
   four:[['Doppelt','Viele Haushalte zahlen für denselben Schutz zweimal.'],['Veraltet','Alte Tarife haben oft schlechtere Bedingungen als neue.'],['Fehlend','Die teuersten Schäden betreffen oft Risiken, die gar nicht versichert sind.'],['Passend','Mieter brauchen keine Wohngebäudeversicherung, Eigentümer schon.']],
@@ -404,6 +418,8 @@ const head=(eye,h,right='')=>`<div class="shead"><div class="rv"><p class="eyebr
 const closer=(eye,h,btn,go,img='street')=>`<section class="dark closer"><img class="bgimg" src="${IMG[img]}" alt=""><div class="wrap rv"><p class="eyebrow">${eye}</p><h2 style="max-width:18ch">${h}</h2><div class="btns"><a class="btn" data-go="${go}"><span>${btn}</span>${ar}</a></div></div></section>`;
 const guideCards=list=>`<div class="guides ${list.length>3?'full':''}">${list.map((g,i)=>`<a class="guide rv d${i%3}" data-go="artikel/${g.id}"><span class="meta">${g.meta}</span><h3>${g.t}</h3><p>${g.x}</p><span class="lnk">Weiterlesen ${ar}</span></a>`).join('')}</div>`;
 const faqHtml=()=>`<div class="faq rv">${FAQ.map(f=>`<details><summary>${f[0]}</summary><div class="a">${f[1]}</div></details>`).join('')}</div>`;
+const TILE={'sc-vault':'vorsorge','sc-meter':'strom','sc-plan':'bau','sc-kredit':'kredit'};
+const tile=sc=>{const k=TILE[sc];return `<span class="scene ${sc}"></span>`+(k?`<img class="tm" src="tile-${k}.jpg" alt="" loading="lazy" onerror="this.remove()"><video class="tm" data-src="tile-${k}.mp4" poster="tile-${k}.jpg" muted loop playsinline preload="none" aria-hidden="true" onerror="this.remove()"></video>`:'')};
 const heroSlides=(imgs)=>`<div class="slides">${imgs.map((k,i)=>`<img src="${IMG[k]}" alt="" style="object-position:${POS[k]||'50% 22%'}" class="${i?'':'on'}">`).join('')}</div>`;
 const words=t=>t.split(' ').map((w,i)=>`<span class="w" style="transition-delay:${.1+i*.06}s">${w}</span>`).join(' ');
 
@@ -413,17 +429,18 @@ const PAGES={
  <section class="hero" id="hero">${heroSlides(['profile','talk','couple']).replace('</div>','<video class="herovid" src="kevin-clip.mp4" muted playsinline autoplay preload="auto" aria-hidden="true"></video></div>')}
   <div class="wrap"><p class="eyebrow">Financial Trainer · Berlin und Brandenburg</p>
    <h1>${words('Aus Verträgen werden Vorteile.')}</h1>
-   <p class="lead" style="margin-top:22px">Ich prüfe Altersvorsorge, Versicherungen, Krankenversicherung, Strom und Baufinanzierung und zeige dir in Euro, was sich lohnt. Alles aus einer Hand.</p>
+   <p class="lead" style="margin-top:22px">Ich prüfe Altersvorsorge, Versicherungen, Krankenversicherung, Strom, Baufinanzierung und Privatkredite und zeige dir in Euro, was sich lohnt. Alles aus einer Hand.</p>
    <div class="btns"><a class="btn" data-go="rechner"><span>Selbst nachrechnen</span>${ar}</a><a class="btn line" data-go="unterlagen"><span>Unterlagen senden</span></a></div></div>
   <div class="dots" id="dots"><button class="on" aria-label="Bild 1"></button><button aria-label="Bild 2"></button><button aria-label="Bild 3"></button></div><div class="scrollhint"></div></section>
- ${sec('',head('Ausgewählte Rechnungen','Was es kostet. Was bleibt.',`<a class="lnk" data-go="rechner">Alle Rechner ${ar}</a>`)+`<div class="cards">
-   <a class="pcard rv" data-go="leistung/altersvorsorge"><div class="img"><span class="scene sc-vault"></span><span class="shade"></span><span class="fig">0,00 €<small>Abschlusskosten in meiner eigenen Police</small></span></div><p class="meta">Altersvorsorge · Nettopolice</p><h3>Rentenversicherung ohne Provision</h3><p>Jede Zuzahlung vollständig angelegt, Laufzeit bis 85, Rückvergütungen für dich.</p><span class="plus">+</span></a>
-   <a class="pcard rv d1" data-go="leistung/energie"><div class="img"><span class="scene sc-meter"></span><span class="shade"></span><span class="fig">403 €<small>im Jahr bei 3.500 kWh in Brandenburg</small></span></div><p class="meta">Strom und Gas · Tarifwechsel</p><h3>Raus aus der Grundversorgung</h3><p>Der schnellste Euro: Grundversorgung gegen günstigsten Neukundentarif.</p><span class="plus">+</span></a>
-   <a class="pcard rv d2" data-go="leistung/baufinanzierung"><div class="img"><span class="scene sc-plan"></span><span class="shade"></span><span class="fig">4,01 %<small>effektiver Topzins, 10 Jahre, 09.11.2026</small></span></div><p class="meta">Baufinanzierung · Kauf und Anschluss</p><h3>Finanzierung aus der Praxis</h3><p>Banken vergleichen, Förderung einbinden, Anschluss rechtzeitig sichern.</p><span class="plus">+</span></a></div>`)}
+ ${sec('',head('Ausgewählte Rechnungen','Was es kostet. Was bleibt.',`<a class="lnk" data-go="rechner">Alle Rechner ${ar}</a>`)+`<div class="cards c4">
+   <a class="pcard rv" data-go="leistung/altersvorsorge"><div class="img">${tile('sc-vault')}<span class="shade"></span><span class="fig">0,00 €<small>Abschlusskosten in meiner eigenen Police</small></span></div><p class="meta">Altersvorsorge · Nettopolice</p><h3>Rentenversicherung ohne Provision</h3><p>Jede Zuzahlung vollständig angelegt, Laufzeit bis 85, Rückvergütungen für dich.</p><span class="plus">+</span></a>
+   <a class="pcard rv d1" data-go="leistung/energie"><div class="img">${tile('sc-meter')}<span class="shade"></span><span class="fig">403 €<small>im Jahr bei 3.500 kWh in Brandenburg</small></span></div><p class="meta">Strom und Gas · Tarifwechsel</p><h3>Raus aus der Grundversorgung</h3><p>Der schnellste Euro: Grundversorgung gegen günstigsten Neukundentarif.</p><span class="plus">+</span></a>
+   <a class="pcard rv d2" data-go="leistung/baufinanzierung"><div class="img">${tile('sc-plan')}<span class="shade"></span><span class="fig">4,01 %<small>effektiver Topzins, 10 Jahre, 09.11.2026</small></span></div><p class="meta">Baufinanzierung · Kauf und Anschluss</p><h3>Finanzierung aus der Praxis</h3><p>Banken vergleichen, Förderung einbinden, Anschluss rechtzeitig sichern.</p><span class="plus">+</span></a>
+   <a class="pcard rv d3" data-go="leistung/privatkredit"><div class="img">${tile('sc-kredit')}<span class="shade"></span><span class="fig">Raten, die passen<small>Privatkredite vergleichen, nicht verkaufen</small></span></div><p class="meta">Privatkredite · Vergleich</p><h3>Kredit mit Überblick</h3><p>Angebote mehrerer Banken nebeneinander. Ich bin Vermittler, die Bank entscheidet.</p><span class="plus">+</span></a></div>`)}
  ${sec('sand',head('Leistungsspektrum','Von der Frage zur belastbaren Entscheidung.')+`<div class="cols3">
    <div class="rv"><span class="no">01</span><h3>Vorsorge</h3><p>Fondsgebundene Rentenversicherung als Nettopolice mit Honorar statt Provision.</p><a class="lnk" data-go="leistung/altersvorsorge">Vorsorge kennenlernen ${ar}</a></div>
    <div class="rv d1"><span class="no">02</span><h3>Absicherung</h3><p>Versicherungs-Check, Krankenversicherung und Berufsunfähigkeit in einer Übersicht.</p><a class="lnk" data-go="leistung/absicherung">Absicherung prüfen ${ar}</a></div>
-   <div class="rv d2"><span class="no">03</span><h3>Wohnen und Energie</h3><p>Baufinanzierung, Anschlussfinanzierung sowie Strom und Gas im Vergleich.</p><a class="lnk" data-go="leistung/baufinanzierung">Wohnen planen ${ar}</a></div></div>
+   <div class="rv d2"><span class="no">03</span><h3>Wohnen, Energie und Kredite</h3><p>Baufinanzierung, Strom und Gas sowie Privatkredite im Vergleich.</p><a class="lnk" data-go="leistung/baufinanzierung">Wohnen planen ${ar}</a> <a class="lnk" data-go="leistung/privatkredit">Privatkredite vergleichen ${ar}</a></div></div>
   <div class="facts"><div class="rv"><b>Landesbank Berlin</b><span>früher Privatkundenbetreuer</span></div><div class="rv d1"><b>Dr. Klein</b><span>früher Vermittler für Baufinanzierung</span></div><div class="rv d2"><b>Honorar</b><span>statt Provision bei der Vorsorge</span></div></div>`)}
  <section class="dark"><div class="wrap">
   <div class="rv"><p class="eyebrow">Verantwortung im Haushalt</p><h2 style="max-width:20ch">Mehrwert entsteht, wenn alles ineinandergreift.</h2><p class="lead" style="margin-top:22px">Vorsorge, Absicherung, Wohnen und Energie sind keine Einzelthemen. Ich führe sie zu einem Plan zusammen, der zu deinem Einkommen und deinem Leben passt.</p></div>
@@ -440,7 +457,7 @@ const PAGES={
  <section class="hero subhero" id="hero">${heroSlides(['couple','talk'])}
   <div class="wrap"><p class="eyebrow">${L.eye}</p><h1 style="font-size:clamp(2.3rem,5.4vw,4.4rem);max-width:18ch">${words(L.h)}</h1><p class="lead" style="margin-top:22px">${L.lead}</p>
   <div class="btns"><a class="btn" data-go="unterlagen"><span>Unterlagen senden</span>${ar}</a>${L.calc?`<button class="btn line" type="button" onclick="document.getElementById('calc').scrollIntoView({behavior:'smooth'})"><span>Direkt nachrechnen</span></button>`:''}</div></div><div class="scrollhint"></div></section>
- ${sec('',head('Worauf es ankommt',`Drei Fragen, die über dein Geld entscheiden.`)+`<div class="cards">${L.cards.map((c,i)=>`<div class="pcard rv d${i}"><div class="img" style="aspect-ratio:16/11"><span class="scene ${L.scene}"></span><span class="shade"></span></div><p class="meta">${c[0]}</p><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join('')}</div>`)}
+ ${sec('',head('Worauf es ankommt',`Drei Fragen, die über dein Geld entscheiden.`)+`<div class="cards">${L.cards.map((c,i)=>`<div class="pcard rv d${i}"><div class="img" style="aspect-ratio:16/11">${tile(L.scene)}<span class="shade"></span></div><p class="meta">${c[0]}</p><h3>${c[1]}</h3><p>${c[2]}</p></div>`).join('')}</div>`)}
  ${sec('sand',`<div class="rv"><p class="eyebrow">Im Detail</p><h2 style="max-width:20ch">Was du wissen solltest, bevor du unterschreibst.</h2></div><div class="grid4">${L.four.map((f,i)=>`<div class="rv d${i%3}"><h4>${f[0]}</h4><p>${f[1]}</p></div>`).join('')}</div>`)}
  ${L.calc?sec('',`<div id="calc" class="rv"><p class="eyebrow">Rechner</p><h2>Rechne mit deinen Zahlen.</h2></div><div class="calc rv" id="calcBox"></div>`):''}
  ${sec(L.calc?'sand':'',`<div class="rv"><p class="eyebrow">Ablauf</p><h2 style="max-width:20ch">Von der ersten Frage bis zur Entscheidung.</h2></div><div class="steps5">${L.steps.map((s,i)=>`<div class="rv d${i%3}"><h4>${s[0]}</h4><p>${s[1]}</p></div>`).join('')}</div>`)}
@@ -465,6 +482,7 @@ const PAGES={
  ${sec('sand',head('Strom','Grundversorgung gegen Neukundentarif.')+`<div class="calc rv" id="c_strom"></div>`)}
  ${sec('',head('Baufinanzierung','Was kostet dich dein Haus im Monat?')+`<div class="calc rv" id="c_bau"></div>`)}
  ${sec('sand',head('Krankenversicherung','Dein Beitrag zur gesetzlichen Kasse.')+`<div class="calc rv" id="c_kv"></div>`)}
+ ${sec('',head('Privatkredit','Was kostet dich ein Ratenkredit wirklich?')+`<div class="calc rv" id="c_kredit"></div>`)}
  ${sec('',`<div class="rv"><p class="eyebrow">Interaktiv</p><h2>Lieber als Erlebnis?</h2><p class="lead" style="margin-top:16px">Dieselben Rechnungen als begehbares Haus und als Tresor.</p><div class="btns"><a class="btn" href="https://claude.ai/artifact/Lr7uaJew5dKRUaxqg1BCfH" target="_blank" rel="noopener"><span>Das Haus deiner Finanzen</span>${ar}</a><a class="btn line" href="https://claude.ai/artifact/YaFrp8miefsp6JkZPLDsrv" target="_blank" rel="noopener"><span>Der Tresor</span></a></div></div>`)}`},
 
  ratgeber(){return `
@@ -479,8 +497,8 @@ const PAGES={
 
  unterlagen(){return `
  <section class="hero subhero" id="hero">${heroSlides(['street'])}<div class="wrap"><p class="eyebrow">Unterlagen senden</p><h1 style="max-width:16ch">${words('Vertraulich prüfen lassen.')}</h1><p class="lead" style="margin-top:20px">Du schickst, was du hast. Ich melde mich innerhalb von 48 Stunden an Werktagen mit einer ersten Einschätzung.</p></div><div class="scrollhint"></div></section>
- ${sec('',`<div class="split" style="align-items:start"><div class="rv"><p class="eyebrow">Was ich brauche</p><h2>Ein Foto reicht.</h2><div class="grid4" style="grid-template-columns:1fr 1fr">${[['Vorsorge','Versicherungsschein und letzte Standmitteilung'],['Krankenversicherung','Versicherungsschein oder Mitgliedsbescheinigung'],['Strom und Gas','Letzte Jahresabrechnung'],['Baufinanzierung','Exposé oder Darlehensvertrag, Gehaltsnachweise']].map(x=>`<div><h4>${x[0]}</h4><p>${x[1]}</p></div>`).join('')}</div></div>
-  <form class="form rv d1" id="upForm"><label class="full">Worum geht es?<select required><option value="">Bitte wählen</option><option>Altersvorsorge</option><option>Krankenversicherung</option><option>Strom und Gas</option><option>Baufinanzierung</option><option>Versicherungs-Check</option></select></label>
+ ${sec('',`<div class="split" style="align-items:start"><div class="rv"><p class="eyebrow">Was ich brauche</p><h2>Ein Foto reicht.</h2><div class="grid4" style="grid-template-columns:1fr 1fr">${[['Vorsorge','Versicherungsschein und letzte Standmitteilung'],['Krankenversicherung','Versicherungsschein oder Mitgliedsbescheinigung'],['Strom und Gas','Letzte Jahresabrechnung'],['Baufinanzierung','Exposé oder Darlehensvertrag, Gehaltsnachweise'],['Privatkredit','Laufende Kreditverträge und letzte Gehaltsnachweise']].map(x=>`<div><h4>${x[0]}</h4><p>${x[1]}</p></div>`).join('')}</div></div>
+  <form class="form rv d1" id="upForm"><label class="full">Worum geht es?<select required><option value="">Bitte wählen</option><option>Altersvorsorge</option><option>Krankenversicherung</option><option>Strom und Gas</option><option>Baufinanzierung</option><option>Privatkredit</option><option>Versicherungs-Check</option></select></label>
    <label>Vor- und Nachname<input required autocomplete="name"></label><label>Telefon oder E-Mail<input required></label>
    <label class="dropz full"><input type="file" multiple accept="image/*,application/pdf" id="upFile"><b>Dateien wählen oder fotografieren</b><br><span class="small" id="upList">PDF oder Foto, mehrere Dateien möglich</span></label>
    <label class="ck full"><input type="checkbox" required><span>Ich bin einverstanden, dass Kevin Korn meine Angaben und Unterlagen nutzt, um mir ein Angebot zu erstellen. [Link Datenschutzerklärung]</span></label>
@@ -496,14 +514,14 @@ const PAGES={
  <section class="hero subhero" id="hero">${heroSlides(['couple','talk'])}<div class="wrap"><p class="eyebrow">Karriere</p><h1 style="max-width:16ch">${words('Financial Trainer werden.')}</h1><p class="lead" style="margin-top:20px">Du arbeitest gern mit Menschen und willst nach Leistung verdienen? Mach den 2-Minuten-Check.</p></div><div class="scrollhint"></div></section>
  ${sec('',`<div class="rv" style="max-width:820px"><p class="eyebrow">Selbstcheck</p><h2>Wie zufrieden bist du in deinem Job?</h2><div id="job" style="margin-top:30px"></div><p class="note">Ein Selbstcheck mit eigenen Fragen, kein wissenschaftlicher Test.</p></div>`)}`},
 
- impressum(){return legal('Impressum',[['Angaben gemäß § 5 DDG','Kevin Korn<br>[Straße und Hausnummer]<br>15562 Rüdersdorf bei Berlin'],['Kontakt','Telefon: [Telefon]<br>E-Mail: [E-Mail]'],['Vermittlerstatus und Register','[Erlaubnis nach § 34d / § 34f / § 34i GewO, zuständige IHK, Registrierungsnummer laut Vermittlerregister]'],['Gebundener Vermittler / Haftungsdach','[Angaben zu ONESTY als Vertriebspartner, falls zutreffend]'],['Berufsrechtliche Regelungen','[Gewerbeordnung, Versicherungsvermittlungsverordnung]'],['Streitschlichtung','[Angaben zur Verbraucherschlichtung]']])},
+ impressum(){return legal('Impressum',[['Angaben gemäß § 5 DDG','Kevin Korn<br>[Straße und Hausnummer]<br>15562 Rüdersdorf bei Berlin'],['Kontakt','Telefon: [Telefon]<br>E-Mail: [E-Mail]'],['Vermittlerstatus und Register','[Erlaubnis nach § 34d / § 34f / § 34i GewO sowie für Darlehensvermittlung (Privatkredite) die jeweils erforderliche Erlaubnis, zuständige IHK, Registrierungsnummer laut Vermittlerregister. Zuordnung der Erlaubnis vor Livegang prüfen lassen]'],['Gebundener Vermittler / Haftungsdach','[Angaben zu ONESTY als Vertriebspartner, falls zutreffend]'],['Berufsrechtliche Regelungen','[Gewerbeordnung, Versicherungsvermittlungsverordnung]'],['Streitschlichtung','[Angaben zur Verbraucherschlichtung]']])},
  datenschutz(){return legal('Datenschutzerklärung',[['Verantwortlicher','Kevin Korn, [Anschrift, Kontakt]'],['Hochgeladene Unterlagen','[Zweck, Rechtsgrundlage, Speicherort, Löschfrist]'],['Gesundheitsdaten','[Ausdrückliche Einwilligung nach Art. 9 DSGVO bei Krankenversicherung]'],['Terminbuchung','[Eingesetzter Kalenderdienst und Auftragsverarbeitung]'],['Hosting und Schriftarten','[Hostinganbieter; Schriftarten möglichst lokal einbinden]'],['Deine Rechte','[Auskunft, Berichtigung, Löschung, Widerruf, Beschwerde bei der Aufsichtsbehörde]']])},
- erstinfo(){return legal('Erstinformation',[['Statusinformation nach § 15 VersVermV','[Name, Anschrift, Status als Vermittler, Registernummer]'],['Beteiligungen','[Angaben zu direkten oder indirekten Beteiligungen]'],['Vergütung','[Honorar, Provision oder sonstige Zuwendungen]'],['Beschwerdestellen','[Versicherungsombudsmann, Ombudsmann PKV]']])}
+ erstinfo(){return legal('Erstinformation',[['Statusinformation nach § 15 VersVermV','[Name, Anschrift, Status als Vermittler, Registernummer]'],['Beteiligungen','[Angaben zu direkten oder indirekten Beteiligungen]'],['Kreditvermittlung','[Pflichtangaben für Darlehensvermittler: Status als Vermittler, Zusammenarbeit mit Banken, Vergütung, Hinweis auf Beratungsleistungen; Beispiele für Effektivzinsen nur mit repräsentativem Beispiel]'],['Vergütung','[Honorar, Provision oder sonstige Zuwendungen]'],['Beschwerdestellen','[Versicherungsombudsmann, Ombudsmann PKV]']])}
 };
 function legal(t,rows){return `<section class="hero subhero" id="hero" style="min-height:52svh">${heroSlides(['profile'])}<div class="wrap"><p class="eyebrow">Rechtliches</p><h1 style="font-size:clamp(2.2rem,5vw,3.8rem)">${words(t)}</h1></div></section>${sec('',`<div class="legal article rv"><p class="note">Platzhalter. Die Texte müssen vor Veröffentlichung rechtlich geprüft und vollständig ausgefüllt werden.</p>${rows.map(r=>`<h2>${r[0]}</h2><p>${r[1]}</p>`).join('')}</div>`)}`}
 
 /* ---------- Rechner ---------- */
-const C={rate:150,age:36,zuz:2000,ret:6,pers:3,grund:true,preis:350000,ek:70000,tilg:2,brutto:4200,zus:2.9};
+const C={kbetrag:15000,klauf:60,kzins:7,rate:150,age:36,zuz:2000,ret:6,pers:3,grund:true,preis:350000,ek:70000,tilg:2,brutto:4200,zus:2.9};
 function sim(){const pm=Math.max(0,(65-C.age)*12),months=(85-C.age)*12,abM=.025*C.rate*pm/Math.min(60,pm||1),g=Math.pow(1+C.ret/100,1/12),dep=.0022/12;let n=0,k=0,hl=1500,paid=0,cz=0;
  for(let m=0;m<months;m++){let a=0,b=0;if(m<pm){a=C.rate;paid+=C.rate;b=C.rate-(m<60?Math.min(abM,C.rate):0);if(C.zuz&&m%12===0){a+=C.zuz;paid+=C.zuz;cz+=C.zuz*.055;b+=C.zuz*.945}const h=Math.min(hl,a);hl-=h;a-=h}n=(n+a)*g*(1-dep)+n*.0065/12;k=(k+b)*g*(1-dep)}return{n,k,paid,cz}}
 const slider=(id,label,min,max,step,val,fmt)=>`<div class="ctl"><label for="${id}">${label} <output>${fmt(val)}</output></label><input type="range" id="${id}" min="${min}" max="${max}" step="${step}" value="${val}"></div>`;
@@ -514,10 +532,12 @@ const CALC={
   <div><p class="small">Möglicher Vorteil im Jahr gegenüber der Grundversorgung</p><div class="big">${eur(s)}</div><div class="row" style="margin-top:18px"><span>Grundversorgung</span><b>${eur(kwh*.4334)}</b></div><div class="row"><span>Günstigster Neukundentarif</span><b>${eur(kwh*.3182)}</b></div><p class="small" style="margin-top:12px">StromAuskunft.de, Brandenburg, 07.11.2026, Grundgebühren verrechnet.</p></div></div>`},
  bau(){const D=Math.max(0,C.preis*1.1-C.ek),i=.0401/12,R=D*(.0401+C.tilg/100)/12,n=R>D*i?-Math.log(1-i*D/R)/Math.log(1+i)/12:Infinity;return `<div class="split" style="align-items:start"><div>${slider('k_preis','Kaufpreis',100000,900000,5000,C.preis,eur)}${slider('k_ek','Eigenkapital',0,300000,5000,C.ek,eur)}${slider('k_tilg','Tilgung',1,5,.5,C.tilg,v=>num(v,1)+' %')}</div>
   <div><p class="small">Monatliche Rate bei 4,01 %</p><div class="big">${eur(R)}</div><div class="row" style="margin-top:18px"><span>Darlehen inkl. 10 % Nebenkosten</span><b>${eur(D)}</b></div><div class="row"><span>Schuldenfrei nach etwa</span><b>${isFinite(n)?num(n,0)+' Jahren':'nie'}</b></div><p class="small" style="margin-top:12px">Dr. Klein, effektiver Topzins 10 Jahre, 09.11.2026. Nebenkosten 10 % als Annahme.</p></div></div>`},
+ kredit(){const P=C.kbetrag,n=C.klauf,i=C.kzins/100/12,R=i>0?P*i/(1-Math.pow(1+i,-n)):P/n,tot=R*n;return `<div class="split" style="align-items:start"><div>${slider('k_kbetrag','Kreditbetrag',1000,50000,500,C.kbetrag,eur)}${slider('k_klauf','Laufzeit',12,120,6,C.klauf,v=>v+' Monate')}${slider('k_kzins','Effektiver Jahreszins (deine Annahme)',2,15,.1,C.kzins,v=>num(v,1)+' %')}</div>
+  <div><p class="small">Monatliche Rate</p><div class="big">${eur(R)}</div><div class="row" style="margin-top:18px"><span>Gesamtbetrag</span><b>${eur(tot)}</b></div><div class="row"><span>Kosten des Kredits</span><b>${eur(tot-P)}</b></div><p class="small" style="margin-top:12px">Beispielrechnung mit von dir gewähltem Zins, kein Angebot. Konditionen hängen von Bonität und Bank ab. Kredite müssen zurückgezahlt werden.</p></div></div>`},
  kv(){const an=Math.min(C.brutto,5812.5)*(14.6+C.zus)/200;return `<div class="split" style="align-items:start"><div>${slider('k_brutto','Brutto im Monat',1500,12000,100,C.brutto,eur)}${slider('k_zus','Zusatzbeitrag deiner Kasse',1.5,4.5,.1,C.zus,v=>num(v,1)+' %')}</div>
   <div><p class="small">Dein Anteil im Monat, ohne Pflegeversicherung</p><div class="big">${eur(an)}</div><div class="row" style="margin-top:18px"><span>Im Jahr</span><b>${eur(an*12)}</b></div><div class="row"><span>Wahl privat möglich als Angestellter</span><b>${C.brutto*12>77400?'ja':'nein'}</b></div><p class="small" style="margin-top:12px">Bundesgesundheitsministerium 2026: 14,6 % plus durchschnittlich 2,9 %, Bemessungsgrenze 5.812,50 €, Pflichtgrenze 77.400 €.</p></div></div>`}
 };
-const KEY={k_rate:'rate',k_age:'age',k_zuz:'zuz',k_ret:'ret',k_pers:'pers',k_preis:'preis',k_ek:'ek',k_tilg:'tilg',k_brutto:'brutto',k_zus:'zus'};
+const KEY={k_rate:'rate',k_age:'age',k_zuz:'zuz',k_ret:'ret',k_pers:'pers',k_preis:'preis',k_ek:'ek',k_tilg:'tilg',k_kbetrag:'kbetrag',k_klauf:'klauf',k_kzins:'kzins',k_brutto:'brutto',k_zus:'zus'};
 function mountCalc(el,type){const draw=()=>{el.innerHTML=CALC[type]();el.querySelectorAll('input[type=range]').forEach(r=>r.addEventListener('input',e=>{C[KEY[r.id]]=+r.value;const id=r.id,p=r.selectionStart;draw();const n=el.querySelector('#'+id);n&&n.focus()}))};draw()}
 
 /* ---------- Vier Hebel ---------- */
@@ -561,7 +581,7 @@ function render(route){
  document.querySelectorAll('nav.main>a,nav.main .dd>button').forEach(a=>a.classList.toggle('on',a.dataset.go===p||(p==='leistung'&&a.id==='ddBtn')));
  bindGo(document.body);reveal();heroInit();drawLevers();drawJob();
  const cb=$('#calcBox');if(cb){mountCalc(cb,LEIST[arg].calc)}
- ['vorsorge','strom','bau','kv'].forEach(t=>{const e=$('#c_'+t);if(e)mountCalc(e,t)});
+ ['vorsorge','strom','bau','kv','kredit'].forEach(t=>{const e=$('#c_'+t);if(e)mountCalc(e,t)});
  document.querySelectorAll('form').forEach(f=>f.onsubmit=e=>{e.preventDefault();f.innerHTML='<p class="lead full fade">Danke. Ich melde mich innerhalb von 48 Stunden. (Entwurf: nichts gesendet.)</p>'});
  const uf=$('#upFile');if(uf)uf.onchange=()=>{$('#upList').textContent=[...uf.files].map(f=>f.name).join(', ')};
  document.title=(fn===PAGES.start?'Kevin Korn – Financial Trainer bei ONESTY':($('#hero h1')?.textContent||'Kevin Korn')+' – Kevin Korn');
@@ -590,5 +610,10 @@ document.addEventListener('mouseleave',()=>cur.style.opacity=0);
 if(!levT)levT=setInterval(()=>{if($('#wheel')&&document.visibilityState==='visible'){levI=(levI+1)%4;drawLevers()}},7000);
 buildNav();render(location.hash.slice(1)||'start');
 </script>
-<script>document.addEventListener('error',e=>{if(e.target.classList&&e.target.classList.contains('herovid'))e.target.remove()},true);</script></body>
+<script>document.addEventListener('error',e=>{if(e.target.classList&&e.target.classList.contains('herovid'))e.target.remove()},true);
+(function(){const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;if(rm||!('IntersectionObserver' in window))return;
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.src&&v.dataset.src){v.src=v.dataset.src;v.addEventListener('canplay',()=>v.classList.add('on'),{once:true})}v.play&&v.play().catch(()=>{})}else{v.pause&&v.pause()}}),{threshold:.35});
+const scan=()=>document.querySelectorAll('video.tm').forEach(v=>{if(!v.__io){v.__io=1;io.observe(v)}});
+new MutationObserver(scan).observe(document.body,{childList:true,subtree:true});scan()})();
+</script></body>
 </html>
